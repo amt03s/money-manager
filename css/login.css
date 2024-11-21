@@ -1,0 +1,195 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Login Form Container */
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    margin: 25px auto;
+    padding: 50px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: slideUp 0.8s ease-out;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+    animation: fadeIn 1s ease-out;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    animation: fadeIn 1.2s ease-out;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    animation: fadeIn 1.4s ease-out;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #000;
+    background-color: #fff;
+    outline: none;
+    animation: inputFocus 0.3s ease;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #444;
+    transform: translateY(-4px); /* Button hover effect */
+}
+
+.signup-redirect {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+    animation: fadeIn 1.6s ease-out;
+}
+
+.signup-redirect a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-redirect a:hover {
+    text-decoration: underline;
+}
+
+/* Password Visibility Toggle */
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;  /* Space for the toggle button */
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.password-wrapper input:focus {
+    border-color: #000;
+    background-color: #fff;
+    outline: none;
+    animation: inputFocus 0.3s ease;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.toggle-password:hover {
+    color: #000;
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+/* Back Button Styles */
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes inputFocus {
+    0% {
+        border-color: #ccc;
+    }
+    100% {
+        border-color: #000;
+    }
+}
